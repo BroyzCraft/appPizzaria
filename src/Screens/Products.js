@@ -4,10 +4,10 @@ import {
     View,
     FlatList,
     Text,
-    Image,
-    Button
+    Image
 } from 'react-native'
 import API from '../Data/API'
+import { Ionicons } from '@expo/vector-icons'
 
 export default props => {
 
@@ -17,7 +17,7 @@ export default props => {
         <FlatList 
         data={data}
         keyExtractor={ item => String(item.id)}
-        renderItem={({ item }) => <ListItem data={item}/>}
+        renderItem={({ item }) => <ListItem data={item} />}
         />
     )
 }
@@ -36,9 +36,19 @@ function ListItem({ data }){
                 </View>
                 <Text style={styles.descripition}>{data.descripition}</Text>
                 <View style={styles.options}>
-                    <Text> - </Text>
-                    <Text> 0 </Text>
-                    <Text> + </Text>
+                    <Text>
+                        <Ionicons 
+                            name='remove-circle-outline'
+                            size={25}
+                        />
+                    </Text>
+                    <Text style={{ marginHorizontal: 10 , fontSize: 20 }}> 0 </Text>
+                    <Text>
+                        <Ionicons 
+                            name='add-circle-outline'
+                            size={25}
+                        />
+                    </Text>
                 </View>
             </View>
         </View>
@@ -49,8 +59,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'row',
-        padding: 5,
-        margin: 5
+        paddingHorizontal: 5,
+        paddingVertical: 10,
+
     },
     containerText: {
         flex: 1,
