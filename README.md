@@ -8,8 +8,8 @@ Aplicativo para Pizzarias desenvolvida em React Native com objetivo de fornecer 
 
 App White: 
 
-<img src="https://github.com/BroyzCraft/appPizzaria/blob/main/prototipe/appWhite.jpeg?raw=true" width="300" height="580"/>
+<img src="https://github.com/BroyzCraft/appPizzaria/blob/main/prototipe/appWhite.jpeg?raw=true" width="300" height="650"/>
 
 App Black
 
-<img src="https://github.com/BroyzCraft/appPizzaria/blob/main/prototipe/appBlack.jpeg?raw=true" width="300" height="580"/>
+<img src="https://github.com/BroyzCraft/appPizzaria/blob/main/prototipe/appBlack.jpeg?raw=true" width="300" height="650"/>
