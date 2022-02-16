@@ -12,8 +12,8 @@ import API from '../data/API'
 import ModalCheckout from '../components/modalCheckout'
 
 const initialStateModal = {
-    Producs: [],
-    Value: 0.0,
+    Producs: ['Pizza de Mussarela',],
+    Value: 15.55,
     Check: false
 }
 
