@@ -3,8 +3,9 @@ import { StyleSheet } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons'
-import Menu from './Screens/Menu';
-import Products from './Screens/Products';
+import Menu from './screens/Menu';
+import Products from './screens/Products';
+import Checkout from './screens/Checkout';
 
 const Tab = createBottomTabNavigator();
 
@@ -63,7 +64,7 @@ export default props => {
                 />
                 <Tab.Screen 
                     name="Pedidos" 
-                    component={Menu}
+                    component={Checkout}
                     options={{
                         headerTitle: namePizzaria,
                         headerStyle: {
